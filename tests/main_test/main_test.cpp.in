@@ -512,8 +512,11 @@ TEST(TypedListReadWriteTest, ReadWriteCharBinarySwap) {
   // Create a simple file
   happly::PLYData plyOut;
   plyOut.addElement("test_elem", 5);
+  // std::vector<std::vector<char>> testData{
+  //     {3}, {3, 0, 11, -128, 127}, {}, {}, {3, 11},
+  // };
   std::vector<std::vector<char>> testData{
-      {3}, {3, 0, 11, -128, 127}, {}, {}, {3, 11},
+    {char(3)}, {char(3), char(0), char(11), char(-128), char(127)}, {}, {}, {char(3), char(11)},
   };
   plyOut.getElement("test_elem").addListProperty<char>("test_data", testData);
 
