@@ -1,5 +1,7 @@
-project = # Unnamed tests subproject.
+project = happly-tests
 
+using version
 using config
 using test
+using install
 using dist

@@ -1,6 +1,7 @@
 : 1
 name: happly
 version: 0.1.0-a.0.z
+project: happly
 type: lib,binless
 language: c++
 summary: A C++ header-only parser for the PLY file format
@@ -15,7 +16,7 @@ package-url: https://github.com/build2-packaging/happly/
 package-email: lyrahgames@mailbox.org
 #build-error-email: lyrahgames@mailbox.org
 
+tests: happly-tests == $
+
 depends: * build2 >= 0.15.0
 depends: * bpkg >= 0.15.0
-
-depends: gtest ^ 1.11.0

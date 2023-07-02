@@ -1,0 +1,2 @@
+import happly = happly%lib{happly}
+exe{main}: {hxx cxx}{**} $happly
