@@ -4,5 +4,5 @@ import libs += gtest%lib{gtest}
 exe{main_test}: cxx{main_test} $libs
 cxx{main_test}: in{main_test}
 {
-  test_root = $regex.replace($src_root, '\\', '\\\\')
+  sampledata = $regex.replace($(src_root)sampledata, '\\', '\\\\')
 }
