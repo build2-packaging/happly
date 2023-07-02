@@ -1,6 +1,6 @@
-lib{happly}: hxx{happly.h.}
+lib{happly}: hxx{happly}
 {
   cxx.export.poptions = "-I$src_base"
 }
 
-hxx{happly}: install = include/
+hxx{happly}@./: install = include/
