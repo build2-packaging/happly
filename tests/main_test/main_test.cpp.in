@@ -1171,7 +1171,7 @@ TEST(TypePromotionTest, FaceIndThrow) {
 TEST(MeshTest, ReadWriteASCIIMesh) {
 
   // = Read in an interesting mesh file
-  happly::PLYData plyIn("$src_root$/sampledata/platonic_shelf_ascii.ply", false);
+  happly::PLYData plyIn("$test_root$/sampledata/platonic_shelf_ascii.ply", false);
   plyIn.validate();
 
   std::vector<std::array<double, 3>> vPos = plyIn.getVertexPositions();
@@ -1201,7 +1201,7 @@ TEST(MeshTest, ReadWriteASCIIMesh) {
 TEST(MeshTest, ReadWriteBinaryMesh) {
 
   // = Read in an interesting mesh file
-  happly::PLYData plyIn("$src_root$/sampledata/platonic_shelf.ply", false);
+  happly::PLYData plyIn("$test_root$/sampledata/platonic_shelf.ply", false);
   plyIn.validate();
 
   std::vector<std::array<double, 3>> vPos = plyIn.getVertexPositions();
@@ -1231,7 +1231,7 @@ TEST(MeshTest, ReadWriteBinaryMesh) {
 TEST(MeshTest, ReadWriteBinarySwapMesh) {
 
   // = Read in an interesting mesh file
-  happly::PLYData plyIn("$src_root$/sampledata/platonic_shelf_big_endian.ply", false);
+  happly::PLYData plyIn("$test_root$/sampledata/platonic_shelf_big_endian.ply", false);
   plyIn.validate();
 
   std::vector<std::array<double, 3>> vPos = plyIn.getVertexPositions();
@@ -1262,7 +1262,7 @@ TEST(MeshTest, ReadWriteBinarySwapMesh) {
 TEST(MeshTest, ReadWriteASCIIMeshStream) {
 
   // = Read the PLY from an input stream
-  std::ifstream file ("$src_root$/sampledata/platonic_shelf_ascii.ply");
+  std::ifstream file ("$test_root$/sampledata/platonic_shelf_ascii.ply");
   happly::PLYData plyIn(file, false);
   plyIn.validate();
   file.close();
@@ -1296,7 +1296,7 @@ TEST(MeshTest, ReadWriteASCIIMeshStream) {
 TEST(MeshTest, ReadWriteBinaryMeshStream) {
 
   // = Read in an interesting mesh file
-  std::ifstream file ("$src_root$/sampledata/platonic_shelf_ascii.ply");
+  std::ifstream file ("$test_root$/sampledata/platonic_shelf_ascii.ply");
   happly::PLYData plyIn(file, false);
   plyIn.validate();
   file.close();
