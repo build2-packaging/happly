@@ -11,7 +11,7 @@ description-file: UPSTREAM.README.md
 url: https://github.com/nmwsharp/happly
 email: nmwsharp@gmail.com
 
-package-description-file: README
+package-description-file: README.md
 package-url: https://github.com/build2-packaging/happly/
 package-email: lyrahgames@mailbox.org
 #build-error-email: lyrahgames@mailbox.org
