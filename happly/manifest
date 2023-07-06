@@ -7,16 +7,16 @@ language: c++
 summary: A C++ header-only parser for the PLY file format
 license: MIT
 
-description-file: README.md
-
+description-file: UPSTREAM.README.md
 url: https://github.com/nmwsharp/happly
 email: nmwsharp@gmail.com
 
+package-description-file: README.md
 package-url: https://github.com/build2-packaging/happly/
 package-email: lyrahgames@mailbox.org
 #build-error-email: lyrahgames@mailbox.org
 
 tests: happly-tests == $
 
-depends: * build2 >= 0.15.0
-depends: * bpkg >= 0.15.0
+depends: * build2 >= 0.16.0
+depends: * bpkg >= 0.16.0

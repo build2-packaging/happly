@@ -10,14 +10,9 @@ cxx{*}: extension = cpp
 
 hxx{*}: cxx.importable = false
 
-# Every exe{} in this subproject is by default a test
-# and tests will not be installed.
+# Every exe{} in this subproject is by default a test.
 #
-exe{*}:
-{
-  test = true
-  install = false
-}
+exe{*}: test = true
 
 # The test target for cross-testing (running tests under Wine, etc).
 #
