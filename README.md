@@ -23,18 +23,24 @@
 </p>
 
 ## Usage
-Make sure to add the stable section of the `cppget.org` repository to your project's `repositories.manifest` to be able to fetch the package.
+As hapPLY does not provide any versioning scheme, make sure to add the alpha section of the `cppget.org` repository to your project's `repositories.manifest` to be able to fetch this package.
 
     :
     role: prerequisite
-    location: https://pkg.cppget.org/1/stable
+    location: https://pkg.cppget.org/1/alpha
     # trust: ...
+
+If the alpha section of `cppget.org` is not an option then add this Git repository itself instead as a prerequisite.
+
+    :
+    role: prerequisite
+    location: https://github.com/build2-packaging/happly.git
 
 Add the respective dependency in your project's `manifest` file to make the package available for import.
 
-    depends: happly ^ 6.4.6
+    depends: happly ^ 0.0.1
 
-The single header-only C++ library to use happly as command-line argument parser can be imported by the following declaration in a `buildfile`.
+The library to use hapPLY can be imported by the following declaration in a `buildfile`.
 
     import happly = happly%lib{happly}
 
@@ -54,7 +60,7 @@ Please, file an issue on [GitHub](https://github.com/build2-packaging/happly/iss
 ### Update Version by Pull Request
 1. Fork the repository on [GitHub](https://github.com/build2-packaging/happly) and clone it to your local machine.
 2. Run `git submodule init` and `git submodule update` to get the current upstream directory.
-3. Inside the `upstream` directory, checkout the new library version `X.Y.Z` by calling `git checkout vX.Y.Z` that you want to be packaged.
+3. Inside the `upstream` directory, checkout the new library version `X.Y.Z` by calling `git checkout vX.Y.Z` that you want to be packaged. Here, it is probably not a version but the newest commit from the master branch instead.
 4. If needed, change source files, `buildfiles`, and symbolic links accordingly to create a working build2 package. Make sure not to directly depend on the upstream directory inside the build system but use symbolic links instead.
 5. Update library version in `manifest` file if it has changed or add package update by using `+n` for the `n`-th update.
 6. Make an appropriate commit message by using imperative mood and a capital letter at the start and push the new commit to the `master` branch.
@@ -63,7 +69,7 @@ Please, file an issue on [GitHub](https://github.com/build2-packaging/happly/iss
 9. After a successful pull request, we will run the appropriate commands to publish a new package version.
 
 ### Update Version Directly if You Have Permissions
-1. Inside the `upstream` directory, checkout the new library version `X.Y.Z` by calling `git checkout vX.Y.Z` that you want to be packaged.
+1. Inside the `upstream` directory, checkout the new library version `X.Y.Z` by calling `git checkout vX.Y.Z` that you want to be packaged. Here, it is probably not a version but the newest commit from the master branch instead.
 2. If needed, change source files, `buildfiles`, and symbolic links accordingly to create a working build2 package. Make sure not to directly depend on the upstream directory inside the build system but use symbolic links instead.
 3. Update library version in `manifest` file if it has changed or add package update by using `+n` for the `n`-th update.
 4. Make an appropriate commit message by using imperative mood and a capital letter at the start and push the new commit to the `master` branch.
