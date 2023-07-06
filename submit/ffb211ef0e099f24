@@ -1,0 +1,8 @@
+: 1
+name: happly-tests
+version: 0.0.1
+type: exe
+language: c++
+project: happly
+summary: A C++ header-only parser for the PLY file format
+license: MIT
