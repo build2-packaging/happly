@@ -4,7 +4,7 @@ version: 0.0.1
 project: happly
 type: exe
 language: c++
-summary: A C++ header-only parser for the PLY file format
+summary: Tests for hapPLY library
 license: MIT
 
 description-file: UPSTREAM.README.md
