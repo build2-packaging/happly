@@ -13,8 +13,7 @@ email: nmwsharp@gmail.com
 
 package-description-file: README.md
 package-url: https://github.com/build2-packaging/happly/
-package-email: lyrahgames@mailbox.org
-#build-error-email: lyrahgames@mailbox.org
+package-email: packaging@build2.org
 
 depends: * build2 >= 0.16.0
 depends: * bpkg >= 0.16.0
