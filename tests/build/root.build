@@ -1,7 +1,7 @@
 cxx.std = latest
 
-using cxx
 using in
+using cxx
 
 hxx{*}: extension = h
 ixx{*}: extension = ipp
