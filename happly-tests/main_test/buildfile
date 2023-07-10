@@ -1,8 +1,4 @@
 import libs = happly%lib{happly}
 import libs += gtest%lib{gtest}
 
-exe{main_test}: cxx{main_test} $libs
-cxx{main_test}: in{main_test}
-{
-  sampledata = $regex.replace($(src_root)sampledata, '\\', '\\\\')
-}
+exe{main_test}: cxx{main_test} $libs testscript

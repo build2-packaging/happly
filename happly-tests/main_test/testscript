@@ -1,0 +1,2 @@
+ln -s $src_root/sampledata ../sampledata;
+$* >- &temp.ply == 0
