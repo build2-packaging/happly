@@ -2,7 +2,7 @@
 !*/
 
 !upstream
-!tests/sampledata
+!happly-tests/sampledata
 
 !*.h
 !*.c
