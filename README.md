@@ -38,7 +38,7 @@ If the alpha section of `cppget.org` is not an option then add this Git reposito
 
 Add the respective dependency in your project's `manifest` file to make the package available for import.
 
-    depends: happly ^ 0.0.1
+    depends: happly ^ 0.0.2
 
 The library to use hapPLY can be imported by the following declaration in a `buildfile`.
 
