@@ -1,2 +1,1 @@
 ./: main_test/ sampledata/file{*.ply} manifest legal{LICENSE} doc{*.md}
-./: install = false
