@@ -1,0 +1,8 @@
+: 1
+name: happly-tests
+version: 0.0.2
+type: exe
+language: c++
+project: happly
+summary: Tests for hapPLY library
+license: MIT
