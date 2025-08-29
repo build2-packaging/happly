@@ -4,7 +4,7 @@ version: 0.0.3-a.0.z
 project: happly
 type: exe
 language: c++
-summary: Tests for hapPLY library
+summary: C++ reader/writer library for the PLY file format, tests
 license: MIT
 
 description-file: README.md
@@ -15,7 +15,7 @@ package-description-file: PACKAGE-README.md
 package-url: https://github.com/build2-packaging/happly/
 package-email: packaging@build2.org
 
-depends: * build2 >= 0.16.0
-depends: * bpkg >= 0.16.0
+depends: * build2 >= 0.17.0
+depends: * bpkg >= 0.17.0
 
 depends: gtest ^ 1.11.0

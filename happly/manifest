@@ -4,7 +4,7 @@ version: 0.0.3-a.0.z
 project: happly
 type: lib,binless
 language: c++
-summary: A C++ header-only parser for the PLY file format
+summary: C++ reader/writer library for the PLY file format
 license: MIT
 
 description-file: README.md
@@ -17,5 +17,5 @@ package-email: packaging@build2.org
 
 tests: happly-tests == $
 
-depends: * build2 >= 0.16.0
-depends: * bpkg >= 0.16.0
+depends: * build2 >= 0.17.0
+depends: * bpkg >= 0.17.0
