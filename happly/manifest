@@ -1,6 +1,6 @@
 : 1
 name: happly
-version: 0.0.3-a.0.z
+version: 0.0.3
 project: happly
 type: lib,binless
 language: c++
