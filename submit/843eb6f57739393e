@@ -1,0 +1,8 @@
+: 1
+name: happly
+version: 0.0.3
+type: lib,binless
+language: c++
+project: happly
+summary: C++ reader/writer library for the PLY file format
+license: MIT
