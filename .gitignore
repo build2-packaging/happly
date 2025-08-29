@@ -1,26 +1,48 @@
+# Use whitelisting and ignore everything by default.
+#
 *
+
+# Don't ignore directories.
+#
 !*/
 
-!upstream
-!happly-tests/sampledata
+# Don't ignore Git-specific files.
+#
+!.git*
 
+# Allow 'upstream' submodule link.
+#
+!upstream
+
+# Don't ignore license and documentation files.
+#
+!*.md
+!LICENSE
+
+# Don't ignore default C++ file extensions.
+#
 !*.h
 !*.c
 !*.hpp
 !*.cpp
+
+# Don't ignore source generation files.
+#
 !*.in
+
+# Add original source files that might have been changed.
+#
 !*.orig
 
-!.build2/**
+# Don't ignore standard build2 files.
+#
 !buildfile
 !bootstrap.build
-!root.build
 !export.build
+!root.build
 !*manifest
 !*testscript
 
-!*.md
-!LICENSE
-
-!.git*
-
+# Allow directory and files to test output against.
+#
+!happly-tests/sampledata
